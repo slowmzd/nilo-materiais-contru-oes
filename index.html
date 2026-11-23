@@ -1,187 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Proposta conceitual de presença digital para Nilo Materiais para Construção.">
-<meta name="theme-color" content="#0700ff">
-<title>Nilo Materiais para Construção</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://images.unsplash.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Demonstração conceitual de site para Nilo Materiais para Construção, Caçapava-SP.">
+<title>Nilo Materiais para Construção | Demonstração</title>
+<link rel="preconnect" href="https://images.unsplash.com"><link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
 </head>
 <body>
-<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-
-<div class="announce">Proposta de site — demonstração conceitual não oficial</div>
-
-<header class="site-header" id="inicio">
-  <div class="nav-wrap">
-    <a class="wordmark" href="#inicio" aria-label="Nilo Materiais para Construção — início">Nilo<span> Materiais para Construção</span></a>
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><i></i><i></i></button>
-    <nav id="nav" aria-label="Navegação principal">
-      <div class="nav-links">
-        <a href="#inicio">Início</a>
-        <a href="#categorias">Produtos</a>
-        <a href="#sobre">A empresa</a>
-        <a href="#contato">Contato</a>
-      </div>
-      <button class="pill pill-black js-contact" type="button">Solicitar orçamento</button>
-    </nav>
-  </div>
-</header>
-
-<main id="conteudo">
-
-  <!-- Hero: banner full-bleed, texto direto sobre a foto -->
-  <section class="hero" aria-labelledby="hero-title">
-    <img class="hero-img" src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&amp;fit=crop&amp;w=2000&amp;q=85" alt="" width="2000" height="1200" fetchpriority="high">
-    <div class="hero-tint"></div>
-    <div class="hero-copy">
-      <p class="label-light">Materiais para construir e reformar</p>
-      <h1 id="hero-title">Da fundação ao acabamento, sua obra começa aqui.</h1>
-      <p class="hero-note">Consulte produtos, preços e disponibilidade diretamente com a loja.</p>
-    </div>
-    <div class="hero-actions">
-      <a class="pill pill-ghost-light" href="#categorias">Ver categorias</a>
-      <button class="pill pill-white js-contact" type="button">Solicitar orçamento</button>
-    </div>
-  </section>
-
-  <!-- Como funciona: três passos separados por hairlines, sem cards -->
-  <section class="steps" aria-label="Como funciona">
-    <ol>
-      <li><b>01</b><span><strong>Encontre por categoria</strong><small>Produtos organizados por etapa da obra</small></span></li>
-      <li><b>02</b><span><strong>Consulte a loja</strong><small>Tire dúvidas sobre itens e disponibilidade</small></span></li>
-      <li><b>03</b><span><strong>Peça seu orçamento</strong><small>Entre em contato para solicitar informações</small></span></li>
-    </ol>
-  </section>
-
-  <!-- Trilho horizontal de categorias -->
-  <section class="rail-section" id="categorias" aria-labelledby="categorias-title">
-    <div class="section-header">
-      <div>
-        <h2 id="categorias-title">O que sua obra precisa?</h2>
-        <p>Explore as categorias e consulte os produtos disponíveis na loja.</p>
-      </div>
-      <div class="rail-controls">
-        <button class="pill-arrow" type="button" data-rail="prev" aria-label="Categorias anteriores" aria-controls="rail">
-          <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 8H2.5M7 3.5 2.5 8 7 12.5"/></svg>
-        </button>
-        <button class="pill-arrow" type="button" data-rail="next" aria-label="Próximas categorias" aria-controls="rail">
-          <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="rail" id="rail" role="region" aria-label="Categorias de produtos">
-      <a class="tile" href="#contato" data-category="Cimento e agregados">
-        <span class="tile-img"><img src="https://images.unsplash.com/photo-1513467655676-561b7d489a88?auto=format&amp;fit=crop&amp;w=720&amp;h=900&amp;q=80" alt="Materiais de construção" width="720" height="900" loading="lazy"></span>
-        <span class="tile-title">Cimento e agregados</span>
-        <span class="tile-meta">Consultar produtos ↗</span>
-        <span class="tile-label">Estrutura</span>
-      </a>
-      <a class="tile" href="#contato" data-category="Materiais elétricos">
-        <span class="tile-img"><img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;w=720&amp;h=900&amp;q=80" alt="Instalação elétrica" width="720" height="900" loading="lazy"></span>
-        <span class="tile-title">Materiais elétricos</span>
-        <span class="tile-meta">Consultar produtos ↗</span>
-        <span class="tile-label">Instalações</span>
-      </a>
-      <a class="tile" href="#contato" data-category="Materiais hidráulicos">
-        <span class="tile-img"><img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&amp;fit=crop&amp;w=720&amp;h=900&amp;q=80" alt="Tubos e conexões hidráulicas" width="720" height="900" loading="lazy"></span>
-        <span class="tile-title">Materiais hidráulicos</span>
-        <span class="tile-meta">Consultar produtos ↗</span>
-        <span class="tile-label">Instalações</span>
-      </a>
-      <a class="tile" href="#contato" data-category="Ferramentas">
-        <span class="tile-img"><img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&amp;fit=crop&amp;w=720&amp;h=900&amp;q=80" alt="Ferramentas" width="720" height="900" loading="lazy"></span>
-        <span class="tile-title">Ferramentas</span>
-        <span class="tile-meta">Consultar produtos ↗</span>
-        <span class="tile-label">Apoio à obra</span>
-      </a>
-      <a class="tile" href="#contato" data-category="Pintura e acabamento">
-        <span class="tile-img"><img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&amp;fit=crop&amp;w=720&amp;h=900&amp;q=80" alt="Pintura e acabamento" width="720" height="900" loading="lazy"></span>
-        <span class="tile-title">Pintura e acabamento</span>
-        <span class="tile-meta">Consultar produtos ↗</span>
-        <span class="tile-label">Acabamento</span>
-      </a>
-      <a class="tile" href="#contato" data-category="Pisos e revestimentos">
-        <span class="tile-img"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=720&amp;h=900&amp;q=80" alt="Pisos e revestimentos" width="720" height="900" loading="lazy"></span>
-        <span class="tile-title">Pisos e revestimentos</span>
-        <span class="tile-meta">Consultar produtos ↗</span>
-        <span class="tile-label">Acabamento</span>
-      </a>
-    </div>
-    <p class="disclaimer">Categorias ilustrativas. A disponibilidade dos produtos deverá ser confirmada com a empresa.</p>
-  </section>
-
-  <!-- Sobre: banner full-bleed + texto -->
-  <section class="about" id="sobre" aria-labelledby="sobre-title">
-    <div class="banner">
-      <img class="banner-img" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&amp;fit=crop&amp;w=2000&amp;q=85" alt="Profissional trabalhando em uma obra" width="2000" height="1200" loading="lazy">
-      <div class="hero-tint"></div>
-      <div class="hero-copy">
-        <p class="label-light">Sobre a Nilo</p>
-        <h2 id="sobre-title">Mais clareza para escolher. Mais praticidade para consultar.</h2>
-      </div>
-      <div class="hero-actions">
-        <a class="pill pill-white" href="#contato">Entre em contato</a>
-      </div>
-    </div>
-    <div class="about-text">
-      <p>Esta apresentação propõe uma forma simples de conhecer a Nilo Materiais para Construção, visualizar categorias de produtos e entrar em contato com a loja.</p>
-      <p>Na versão final, esta área poderá receber a apresentação institucional oficial, fotos da empresa e informações confirmadas pela equipe.</p>
-    </div>
-  </section>
-
-  <!-- Chamada para orçamento -->
-  <section class="quote" aria-labelledby="quote-title">
-    <div class="quote-inner">
-      <div>
-        <p class="label">Vamos conversar sobre sua obra?</p>
-        <h2 id="quote-title">O próximo passo é pedir seu orçamento.</h2>
-        <p class="quote-sub">Conte o que você procura e consulte a equipe da loja.</p>
-      </div>
-      <button class="pill pill-black js-contact" type="button">Solicitar orçamento</button>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section class="contact" id="contato" aria-labelledby="contato-title">
-    <div class="contact-grid">
-      <div class="contact-intro">
-        <p class="label">Fale com a loja</p>
-        <h2 id="contato-title">Vamos ajudar no seu projeto?</h2>
-        <p>Entre em contato para consultar produtos, preços e disponibilidade.</p>
-        <small>Os dados de contato ao lado aguardam confirmação da empresa.</small>
-      </div>
-      <div class="contact-box">
-        <dl>
-          <div><dt>01 · Endereço</dt><dd><b>Caçapava – SP</b><span>Endereço completo a confirmar</span></dd></div>
-          <div><dt>02 · Telefone / WhatsApp</dt><dd><b>Contato oficial a confirmar</b><span>Número será inserido após validação</span></dd></div>
-          <div><dt>03 · Horário de atendimento</dt><dd><b>A confirmar</b><span>Consulte os horários diretamente com a loja</span></dd></div>
-        </dl>
-        <button class="pill pill-black js-contact" type="button">Consultar pelo WhatsApp ↗</button>
-      </div>
-    </div>
-  </section>
+<div class="demo">DEMONSTRAÇÃO MVP • SITE CONCEITUAL NÃO OFICIAL</div>
+<header class="header" id="inicio"><div class="container nav-wrap">
+<a class="logo" href="#inicio"><span class="mark">N</span><span><b>NILO</b><small>MATERIAIS PARA CONSTRUÇÃO</small></span></a>
+<button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+<nav id="nav"><a href="#inicio">Início</a><a href="#categorias">Categorias</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a><button class="btn navbtn js-contact">Solicitar orçamento ↗</button></nav>
+</div></header>
+<main>
+<section class="hero"><div class="container hero-grid">
+<div class="hero-copy"><span class="eyebrow light">SUA OBRA COMEÇA COM BONS MATERIAIS</span><h1>Tudo para sua obra, <em>do começo ao acabamento.</em></h1><p>Encontre materiais para construir, reformar e cuidar de cada detalhe do seu projeto.</p><div class="actions"><a class="btn primary" href="#categorias">Conheça as categorias →</a><button class="btn white js-contact">Peça seu orçamento</button></div><small class="caption">✓ Consulte produtos e disponibilidade diretamente com a loja.</small></div>
+<div class="hero-photo"><img src="https://images.unsplash.com/photo-1503387762-592dea58ef23?auto=format&fit=crop&w=1100&q=85" alt="Projeto arquitetônico e construção"><div class="photo-caption"><b>Construir. Reformar. Realizar.</b><span>Materiais para diferentes etapas da sua obra.</span></div></div>
+</div></section>
+<section class="trust"><div class="container trust-grid"><div><strong>▦ Variedade</strong><span>Categorias para sua obra</span></div><div><strong>⌕ Praticidade</strong><span>Consulte sem sair de casa</span></div><div><strong>✓ Atendimento</strong><span>Fale diretamente com a loja</span></div></div></section>
+<section class="section" id="categorias"><div class="container"><div class="section-head"><div><span class="eyebrow">ENCONTRE O QUE PRECISA</span><h2>Materiais para cada etapa</h2><p>Explore categorias que podem fazer parte do catálogo da loja.</p></div><span class="tag">Categorias ilustrativas</span></div>
+<div class="category-grid">
+<a class="category" href="#contato" data-category="Cimento e agregados"><span>▰</span><b>Cimento e agregados</b><small>Cimento, areia, pedra e mais</small><i>↗</i></a>
+<a class="category" href="#contato" data-category="Materiais elétricos"><span>ϟ</span><b>Materiais elétricos</b><small>Itens para instalações</small><i>↗</i></a>
+<a class="category" href="#contato" data-category="Materiais hidráulicos"><span>◉</span><b>Materiais hidráulicos</b><small>Tubos, conexões e acessórios</small><i>↗</i></a>
+<a class="category" href="#contato" data-category="Pintura e acabamento"><span>▧</span><b>Pintura e acabamento</b><small>Produtos para finalizar</small><i>↗</i></a>
+<a class="category" href="#contato" data-category="Ferramentas"><span>⚒</span><b>Ferramentas</b><small>Para diferentes trabalhos</small><i>↗</i></a>
+<a class="category" href="#contato" data-category="Pisos e revestimentos"><span>▦</span><b>Pisos e revestimentos</b><small>Opções para seus ambientes</small><i>↗</i></a>
+</div></div></section>
+<section class="section about" id="sobre"><div class="container about-grid"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85" alt="Profissional trabalhando em uma obra"><div><span class="eyebrow">SOBRE A DEMONSTRAÇÃO</span><h2>O próximo passo da sua obra começa aqui.</h2><p>Este espaço apresenta uma proposta de presença digital para a Nilo Materiais para Construção. Na versão final, poderá reunir informações oficiais da empresa, categorias de produtos e canais de atendimento.</p><ul><li>Apresentação clara da loja</li><li>Categorias organizadas para facilitar a busca</li><li>Contato rápido para consultar preços e disponibilidade</li></ul><button class="btn primary js-contact">Fale com a loja →</button></div></div></section>
+<section class="quote"><div class="container quote-inner"><div><span class="eyebrow light">VAMOS TIRAR SEU PROJETO DO PAPEL?</span><h2>Peça um orçamento para sua obra.</h2><p>Informe o que você procura e consulte disponibilidade diretamente com a equipe.</p></div><button class="btn yellow js-contact">Solicitar orçamento ↗</button></div></section>
+<section class="section" id="contato"><div class="container contact-grid"><div><span class="eyebrow">ENTRE EM CONTATO</span><h2>Conte com a gente no seu projeto.</h2><p>Os dados abaixo são campos de demonstração e deverão ser confirmados antes da publicação.</p></div><div class="contact-box"><p><b>⌖ Localização</b><span>Caçapava – SP • endereço a confirmar</span></p><p><b>☎ Telefone / WhatsApp</b><span>Contato oficial a confirmar</span></p><p><b>◷ Horário de atendimento</b><span>Consultar horário com a loja</span></p><button class="btn primary js-contact full">Consultar pelo WhatsApp ↗</button></div></div></section>
 </main>
-
-<footer class="site-footer">
-  <div class="footer-top">
-    <a class="wordmark" href="#inicio" aria-label="Nilo Materiais para Construção — voltar ao topo">Nilo<span> Materiais para Construção</span></a>
-    <p>Da fundação ao acabamento, sua obra começa aqui.</p>
-    <a class="pill pill-ghost" href="#inicio">Voltar ao topo ↑</a>
-  </div>
-  <div class="footer-bottom">
-    <span>© <span id="year"></span> Nilo Materiais para Construção</span>
-    <span>Proposta conceitual não oficial • Informações sujeitas à confirmação</span>
-  </div>
-</footer>
-
+<footer><div class="container footer-top"><a class="logo footlogo" href="#inicio"><span class="mark">N</span><span><b>NILO</b><small>MATERIAIS PARA CONSTRUÇÃO</small></span></a><p>Materiais para construir, reformar e realizar.</p><a href="#inicio">Voltar ao topo ↑</a></div><div class="container footer-bottom"><span>© <span id="year"></span> Nilo Materiais para Construção — demonstração conceitual.</span><span>Site não oficial • Dados sujeitos à confirmação</span></div></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-</body>
-</html>
+</body></html>
